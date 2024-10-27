@@ -35,8 +35,8 @@ while True:
                 # print(idLm,lm)
                 h, w, c =  img.shape
                 cx, cy = int(lm.x*w), int(lm.y*h)
-                print(idLm, cx,cy)
-                if idLm == 4:
+                #print(idLm, cx,cy)
+                if idLm == 9:
                     cv2.circle(img, (cx, cy), 10,(0,128,0),cv2.FILLED)
 
             mpDraw.draw_landmarks(img, handLms, mpHands.HAND_CONNECTIONS)
